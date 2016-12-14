@@ -1,5 +1,8 @@
+
 # ImagePickerHandler
-ImagePickerHandler helps you to choose pictures from camera roll, and show camera, also can preview media data.
+## FUNCTION
+ImagePickerHandler helps you to choose pictures from camera roll, and show camera.
+
 
 ## INSTALL
 - Drag ImagePickerHandler.h & ImagePickerHandler.m
@@ -48,17 +51,4 @@ PHAsset *assetResult = [assets objectAtIndex:i];
         _imagePicker.mediaSelectLimit = _imagePicker.maxNumberOfImages + _imagePicker.maxNumberOfVideos;
     }
     [_imagePicker showActionSheetInView:self.view];
-```
-
-### QLPreviewHandler
-Use QuickLook.framework to preview PHAsset media data.
-
-## USAGE
-
-```
-#import <QuickLook/QuickLook.h>
-
-QLPreview = [[QLPreviewHandler alloc]init];
-QLPreview.assetsArray = assets;
-[QLPreview showPreviewVC:self];
 ```
